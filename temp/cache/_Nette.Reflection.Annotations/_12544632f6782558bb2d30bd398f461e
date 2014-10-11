@@ -1,0 +1,7 @@
+<?php //netteCache[01]000259a:3:{s:4:"time";s:21:"0.96555300 1413034098";s:9:"callbacks";a:1:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:67:"C:\wamp\www\TypeValidator\app\presenters\TestValidatorPresenter.php";i:2;i:1413034096;}}s:10:"serialized";b:1;}?>a:1:{s:37:"App\Presenters\TestValidatorPresenter";a:3:{s:5:"class";s:36:"/**
+ * Sign in/out presenters.
+ */";s:3:"use";a:2:{s:5:"Nette";s:5:"Nette";s:13:"TestedLibrary";s:23:"App\Model\TestedLibrary";}s:14:"$testedLibrary";s:63:"/**
+     *
+     * @var TestedLibrary
+     * @inject
+     */";}}

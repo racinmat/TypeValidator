@@ -1,0 +1,36 @@
+#
+# SECURITY WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+#
+# If you don't protect this directory from direct web access, anybody will be able to see your passwords.
+# http://nette.org/security-warning
+#
+parameters:
+
+
+php:
+    date.timezone: Europe/Prague
+
+
+nette:
+    application:
+        errorPresenter: Error
+        mapping:
+            *: App\*Module\Presenters\*Presenter
+
+    session:
+        expiration: 14 days
+
+
+services:
+    - App\Model\TestedLibrary                                                   #validovaná třída
+    - App\Model\SimpleLogger                                                    #logger
+    - App\Model\Validator\TypeValidator                                         #validátor
+    - App\Model\UserManager
+    - App\RouterFactory
+    router: @App\RouterFactory::createRouter
+
+extensions:
+    aop: Kdyby\Aop\DI\AopExtension
+    
+aspects:
+    - App\Model\Validator\ValidatorAspect(true, false, "0")                     #validavací aspekt, zařizuje automatické spoštění validace

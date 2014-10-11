@@ -1,0 +1,4 @@
+Function: multiplyWithMissingParametersAnnotation in class: App\Model\TestedLibrary has no arguments in annotation, but has arguments.
+Function: multiplyWithMissingReturnAnnotation in class: App\Model\TestedLibrary has no return in annotation, but has return.
+Function: multiplyWithNoAnnotation in class: App\Model\TestedLibrary has no arguments in annotation, but has arguments.
+Function: multiplyWithNoAnnotation in class: App\Model\TestedLibrary has no return in annotation, but has return.
